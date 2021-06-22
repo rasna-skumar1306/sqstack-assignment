@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorkerRegistration'
 
+let e = 3;
+localStorage.setItem("limit", e.toString());
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

@@ -10,6 +10,10 @@ const useStyles = makeStyles({
     justifyContent: "center",
     margin: "4rem auto",
     width: "61%",
+    "@media screen and (max-width: 768px)": {
+      display: "grid",
+      width: "80%"
+    }
   },
 });
 

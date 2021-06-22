@@ -8,6 +8,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     margin: "3rem auto 0rem",
     width: "60%",
+    "@media screen and (max-width: 768px)": {
+      width: "100%"
+    }
   },
   tabs: {
     backgroundColor: "#d2d2d2",
@@ -34,10 +37,18 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "1px",
     marginRight: "1px",
     borderRadius: "0",
+    flexWrap: 'wrap',
     "&:hover": {
       backgroundColor: "#5b6f916f",
       color: "#ffffff",
     },
+    "@media screen and (max-width: 768px)": {
+      fontWeight: "500",
+      fontSize: "1rem"
+    },"@media screen and (max-width: 425px)": {
+      fontWeight: "normal",
+      fontSize: "0.65rem"
+    }
   },
   tabButtonActive: {
     flex: "1",
@@ -49,6 +60,15 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "1px",
     marginRight: "1px",
     borderRadius: "0",
+    flexWrap: 'wrap',
+    "@media screen and (max-width: 768px)": {
+      fontWeight: "500",
+      fontSize: "1rem"
+    },
+    "@media screen and (max-width: 425px)": {
+      fontWeight: "normal",
+      fontSize: "0.65rem"
+    }
   },
 }));
 

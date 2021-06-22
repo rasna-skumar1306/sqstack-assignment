@@ -16,6 +16,10 @@ const useStyles = makeStyles({
     marginRight: "10px",
     marginLeft: "10px",
     padding: "0",
+    "@media screen and (max-width: 768px)": {
+      display: "grid",
+      width: "100%"
+    }
   },
   card: {
     borderRadius: "0",
