@@ -7,7 +7,7 @@ import * as serviceWorker from "./serviceWorkerRegistration";
 
 let e = 3;
 let lim = localStorage.getItem("limit");
-lim === null ? localStorage.setItem("limit", e.toString()) : "";
+lim === null && localStorage.setItem("limit", e.toString());
 
 ReactDOM.render(
   <React.StrictMode>
